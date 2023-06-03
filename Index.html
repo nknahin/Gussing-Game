@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusssing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-title">
+                <h1>Gusssing Game</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-field">
+                        <label for="gussingNumber">Guess a number between 1 - 5:</label>
+                        <input type="number" id="gussingNumber" min="1" max="5" required>
+                    </div> 
+                    <div class="buttons">
+                        <button class="btn" id="check" type="submit">Check Result</button>
+                    </div>
+                    
+                </form>
+
+                <p class="resultText"></p>
+                <p class="remainingAttempt"></p>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
